@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Thermometers – Puzzle Game</title>
+  <style>
+    :root {
+      --accent: #2563eb;
+      --bg: #f9fafb;
+      --text: #1e293b;
+      --muted: #475569;
+      --card: #ffffff;
+      --border: #e2e8f0;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --accent: #3b82f6;
+        --bg: #0f172a;
+        --text: #f1f5f9;
+        --muted: #94a3b8;
+        --card: #1e293b;
+        --border: #334155;
+      }
+    }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      transition: background 0.3s, color 0.3s;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+    header picture img {
+      width: 120px;
+      height: 120px;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+    h1 { font-size: 2.2rem; margin: 0 0 12px; }
+    p.tagline { font-size: 1.1rem; color: var(--muted); max-width: 500px; margin: 0 auto; }
+    .cta { margin-top: 40px; }
+    .cta a {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 14px 24px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background .2s, transform .2s;
+    }
+    .cta a:hover {
+      background: #1d4ed8;
+      transform: translateY(-2px);
+    }
+    section.features {
+      text-align: center;
+      padding: 60px 20px;
+      background: var(--card);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      transition: background 0.3s, border-color 0.3s;
+    }
+    section.features h2 { font-size: 1.6rem; margin-bottom: 24px; }
+    .feature-list {
+      display: grid;
+      gap: 24px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .feature {
+      background: var(--bg);
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      transition: background 0.3s;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--muted);
+      padding: 40px 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <picture>
+      <source srcset="AppIcon-iOS-Dark.png" media="(prefers-color-scheme: dark)">
+      <source srcset="AppIcon-iOS-Default.png" media="(prefers-color-scheme: light)">
+      <img src="icon-light.png" alt="Thermometers app icon" />
+    </picture>
+    <h1>Thermometers</h1>
+    <p class="tagline">Thermometers is a fresh and addictive logic puzzle game that brings the classic challenge right to your device.</p>
+    <div class="cta">
+      <a href="#">Coming Soon on the App Store</a>
+    </div>
+  </header>
+
+  <section class="features">
+    <h2>Why You'll Love It</h2>
+    <div class="feature-list">
+      <div class="feature">Test your logic with clever puzzles.</div>
+      <div class="feature">Sleek design and smooth gameplay.</div>
+      <div class="feature">Simple to learn, challenging to master.</div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Adrian Antkowski. All rights reserved.
+  </footer>
+</body>
+</html>
